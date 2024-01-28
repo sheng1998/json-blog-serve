@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>标签管理</title>
+  <link rel="icon" href="/public/favicon.ico">
+  <script src="/public/test/js/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    // axios.post('/tag', {
+    //   name: 'hello',
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.delete('/tag', {
+    //   params: { id: '65b63286c16f00f34a55f3d7' },
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.put('/tag', {
+    //   id: '65b63447f6c37dd95cc69a69',
+    //   name: `好的${Date.now()}`,
+    //   status: 1,
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    axios.get('/tag/list').then(res => {
+      console.log(res.data.data);
+      console.log(res.data.message);
+    });
+    // axios.post('/tag/audit', {
+    //   id: '65b63447f6c37dd95cc69a69',
+    //   status: 1,
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+  </script>
+</body>
+</html>

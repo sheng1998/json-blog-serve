@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章管理</title>
+  <link rel="icon" href="/public/favicon.ico">
+  <script src="/public/test/js/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    // axios.post('/article', {
+    //   title: '静夜思6',
+    //   content: '床前明月光疑是地上霜举头望明月低头思故乡',
+    //   tags: [],
+    //   directoryId: '65b6566a9571a73253771694',
+    //   tags: ['65b63286c16f00f34a55f3d7'],
+    //   // like: ['65b630a914e4a4b33450d810', '65b6571d6a5c7f2819a708b9'],
+    //   // dislike: ['65b63074cdfadaab3e404345'],
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.put('/article', {
+    //   id: '65b656ee6a5c7f2819a7089c',
+    //   title: '静夜思3',
+    //   content: '床前明月光疑是地上霜举头望明月低头思故乡' + Date.now(),
+    //   tags: [],
+    //   directoryId: '65b6566a9571a73253771694',
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.put('/article/review', {
+    //   id: '65b656ee6a5c7f2819a7089c',
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.delete('/article', {
+    //   params: {
+    //     id: '65b656ee6a5c7f2819a7089c',
+    //   },
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    axios.get('/article/list', {
+      params: {
+        page: 1,
+        size: 30,
+      },
+    }).then(res => {
+      console.log(res.data.data);
+      console.log(res.data.message);
+    });
+  </script>
+</body>
+</html>

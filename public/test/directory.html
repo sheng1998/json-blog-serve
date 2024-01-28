@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>目录管理</title>
+  <link rel="icon" href="/public/favicon.ico">
+  <script src="/public/test/js/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    // axios.post('/directory', {
+    //   name: '其它',
+    //   // pid: '65b64ef60eb9e04c7c364e40',
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.delete('/directory', {
+    //   params: {
+    //     id: '65b64ef60eb9e04c7c364e40',
+    //   },
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    // axios.put('/directory', {
+    //   id: '65b6381d6fb4f5711cd44b63',
+    //   name: '你好啊',
+    // }).then(res => {
+    //   console.log(res.data.data);
+    //   console.log(res.data.message);
+    // });
+    axios.get('/directory/list').then(res => {
+      console.log(res.data.data);
+      console.log(res.data.message);
+    });
+  </script>
+</body>
+</html>
